@@ -8,10 +8,10 @@ class Triangle
   end
 
   def kind
-    if a + b > c && a + c > b && c + b > a
-      if a == b && b == c
+    if side_1 + side_2 > side_3 && side_1 + side_3 > side_2 && side_3 + side_2 > side_1
+      if side_1 == side_2 && side_2 == side_3
         :equilateral
-      elsif a == b || a == c || b == c
+      elsif side_1 == side_2 || side_1 == side_3 || side_2 == side_3
         :isosceles
       else
         :scalene
